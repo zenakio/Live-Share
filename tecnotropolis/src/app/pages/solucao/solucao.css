@@ -1,0 +1,34 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #1e293b;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.desafio {
+  background-color: #fee2e2;
+}
+
+.solucao {
+  background-color: #dcfce7;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
