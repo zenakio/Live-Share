@@ -1,1 +1,192 @@
-<p>situacao works!</p>
+<main class="container">
+
+  <!-- Destaque principal -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Ataque Cibernético Afeta Infraestrutura Nacional</h1>
+      <p>
+        Serviços bancários, transporte e comunicações enfrentam instabilidade em todo o país.
+      </p>
+    </div>
+  </section>
+
+  <!-- Conteúdo -->
+  <section class="content">
+    <article class="main-news">
+      <h2>Resumo do Caso</h2>
+      <p>
+        Um ataque cibernético de grande escala provocou a paralisação das principais redes de tecnologia do país, afetando diretamente serviços essenciais como bancos, sistemas de transporte e meios de comunicação.
+      </p>
+      <p>
+        A instabilidade gerou dificuldades em transações financeiras, interrupções em deslocamentos urbanos e falhas na troca de informações, impactando milhões de pessoas.
+      </p>
+      <p>
+        Autoridades e especialistas em segurança digital atuam para conter a ameaça e restabelecer os sistemas afetados.
+      </p>
+      <p>
+        O incidente reforça a necessidade de investimentos em cibersegurança.
+      </p>
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Últimas Notícias</h2>
+
+      <div class="news-item">
+        <h3>Bancos enfrentam instabilidade</h3>
+        <p>Clientes relatam dificuldades para acessar contas.</p>
+        <span>Atualizado há 30 minutos</span>
+      </div>
+
+      <div class="news-item">
+        <h3>Transporte público afetado</h3>
+        <p>Falhas em sistemas de bilhetagem eletrônica.</p>
+        <span>Atualizado há 1 hora</span>
+      </div>
+
+      <div class="news-item">
+        <h3>Governo investiga ataque</h3>
+        <p>Equipes buscam identificar os responsáveis.</p>
+        <span>Atualizado há 2 horas</span>
+      </div>
+
+      <div class="news-item">
+        <h3>Especialistas fazem alerta</h3>
+        <p>Infraestrutura digital mostra vulnerabilidades.</p>
+        <span>Atualizado hoje</span>
+      </div>
+    </aside>
+  </section>
+
+</main>
+
+<style>
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: #eef2f7;
+    color: #1a1a1a;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #3268af, #2b5876);
+    color: white;
+    border-radius: 12px;
+    padding: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+
+  /* LAYOUT */
+  .content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+  }
+
+  /* MAIN NEWS */
+  .main-news {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  }
+
+  .main-news h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    border-left: 4px solid #2b5876;
+    padding-left: 10px;
+  }
+
+  .main-news p {
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  /* SIDEBAR */
+  .sidebar {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  }
+
+  .sidebar h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+  }
+
+  .news-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .news-item:last-child {
+    border-bottom: none;
+  }
+
+  .news-item:hover {
+    transform: translateX(5px);
+  }
+
+  .news-item h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #1e3a5f;
+  }
+
+  .news-item p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+
+  .news-item span {
+    font-size: 0.75rem;
+    color: #999;
+  }
+
+  /* RESPONSIVO */
+  @media (max-width: 900px) {
+    .content {
+      grid-template-columns: 1fr;
+    }
+
+    .hero {
+      padding: 30px;
+    }
+
+    .hero h1 {
+      font-size: 1.6rem;
+    }
+  }
+</style>
