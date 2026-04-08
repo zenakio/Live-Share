@@ -1,65 +1,87 @@
+<div class="w-full">
 
-<div class="h-screen bg-cover bg-center flex items-center justify-center"
-     style="background-image: linear-gradient(rgba(11,42,74,0.85), rgba(11,42,74,0.9)), url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b');">
+  <section class="h-screen bg-cover bg-center flex items-center justify-center text-center"
+    style="background-image: linear-gradient(rgba(11,42,74,0.8), rgba(11,42,74,0.9)), url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b');">
 
-  <div class="text-center text-white px-6">
+    <div class="text-white px-6 max-w-3xl">
 
-    <img src="logo.png" alt="Logo Tecnotrópolis"
-         class="mx-auto mb-6 w-32 h-32 object-contain drop-shadow-lg">
-    <h1 class="text-5xl font-bold mb-4">Tecnotrópolis</h1>
-    <p class="text-lg opacity-90">Onde a tecnologia constrói o futuro</p>
-    <button class="mt-6 px-6 py-3 bg-yellow-400 text-black font-semibold rounded hover:scale-105 transition">
-      Explorar
-    </button>
+      <img src="logo.png"
+           class="mx-auto w-50 h-50 object-contain">
 
-  </div>
+      <h1 class="text-5xl md:text-6xl font-bold mb-6">
+        UM PAÍS PARA INOVAR,<br>VIVER E EVOLUIR
+      </h1>
 
-</div>
+      <p class="text-lg opacity-90 mb-6">
+        Bem-vindo à Tecnotrópolis. Uma nova forma de cidade, conectada ao futuro.
+      </p>
 
-<section class="bg-white py-16 px-6">
+      <a href="#lugares">
+        <button class="px-8 py-3 bg-yellow-400 text-black font-semibold rounded hover:scale-105 transition">
+          Explorar
+        </button>
+      </a>
 
-  <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
-    Lugares para Visitar
-  </h2>
+    </div>
 
-  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+  </section>
 
-    <!-- CARD 1 -->
-    <div class="bg-gray-100 rounded-xl overflow-hidden shadow-md hover:scale-105 transition">
-      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
-           class="w-full h-48 object-cover">
-      <div class="p-5">
+  <!-- BLOCO INSTITUCIONAL -->
+  <section class="bg-white py-20 px-6 text-center">
+
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
+      UMA CIDADE CHEIA DE ENERGIA
+    </h2>
+
+    <p class="max-w-3xl mx-auto text-gray-600 leading-relaxed">
+      Tecnotrópolis é um espaço onde tecnologia, inovação e qualidade de vida se encontram.
+      Inspirada nas cidades do futuro, combina desenvolvimento sustentável, inteligência digital
+      e experiências únicas para seus habitantes.
+    </p>
+
+  </section>
+
+  <!-- IMAGEM GRANDE DE DESTAQUE -->
+  <section class="h-[60vh] bg-cover bg-center"
+    style="background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');">
+  </section>
+
+  <!-- LUGARES -->
+  <section id="lugares" class="bg-white py-20 px-6">
+
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+      Descubra Tecnotrópolis
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+      <!-- ITEM 1 -->
+      <div class="group">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+             class="w-full h-60 object-cover mb-4">
         <h3 class="text-xl font-semibold mb-2">Centro Tecnológico</h3>
         <p class="text-gray-600 text-sm">
-          O coração da inovação com empresas, startups e inteligência artificial.
+          Núcleo de inovação com empresas e inteligência artificial.
         </p>
       </div>
-    </div>
 
-    <!-- CARD 2 -->
-    <div class="bg-gray-100 rounded-xl overflow-hidden shadow-md hover:scale-105 transition">
-      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-           class="w-full h-48 object-cover">
-      <div class="p-5">
+      <!-- ITEM 2 -->
+      <div class="group">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+             class="w-full h-60 object-cover mb-4">
         <h3 class="text-xl font-semibold mb-2">Parque Digital</h3>
         <p class="text-gray-600 text-sm">
-          Área verde com integração tecnológica e espaços interativos.
+          Natureza integrada com tecnologia e interação.
         </p>
       </div>
-    </div>
 
-    <!-- CARD 3 -->
-    <div class="bg-gray-100 rounded-xl overflow-hidden shadow-md hover:scale-105 transition">
-      <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
-           class="w-full h-48 object-cover">
-      <div class="p-5">
+      <!-- ITEM 3 -->
+      <div class="group">
+        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+             class="w-full h-60 object-cover mb-4">
         <h3 class="text-xl font-semibold mb-2">Distrito de Robótica</h3>
         <p class="text-gray-600 text-sm">
-          Região avançada com robôs, automação e pesquisas futuristas.
+          Centro avançado de automação e pesquisa futurista.
         </p>
       </div>
-    </div>
-
-  </div>
-
-</section>
+</div>
