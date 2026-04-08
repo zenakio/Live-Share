@@ -10,7 +10,9 @@
 
   <!-- Conteúdo principal -->
   <section class="content">
-    <article class="main-news">
+    
+    <!-- CARD PRINCIPAL -->
+    <article class="main-news card">
       <h2>Resumo do Caso</h2>
       <p>
         Um ataque cibernético de grande escala provocou a paralisação das principais redes de tecnologia do país, afetando diretamente serviços essenciais como bancos, sistemas de transporte e meios de comunicação.
@@ -52,8 +54,8 @@
 
     </article>
 
-    <!-- Barra lateral de notícias -->
-    <aside class="sidebar">
+    <!-- SIDEBAR -->
+    <aside class="sidebar card">
       <h2>Últimas Notícias</h2>
 
       <div class="news-item">
@@ -80,6 +82,7 @@
         <span>Atualizado hoje</span>
       </div>
     </aside>
+
   </section>
 
 </main>
@@ -115,24 +118,31 @@
     gap: 20px;
   }
 
-  .main-news {
-    flex: 2;
+  /* CARD PADRÃO */
+  .card {
     background: white;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  }
+
+  .main-news {
+    flex: 2;
   }
 
   .sidebar {
     flex: 1;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
   }
 
   .news-item {
     margin-bottom: 15px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #eee;
     padding-bottom: 10px;
+    transition: 0.3s;
+  }
+
+  .news-item:hover {
+    transform: translateX(5px);
   }
 
   .news-item span {
@@ -161,7 +171,7 @@
 
   .progress {
     height: 10px;
-    background: #1e2a38;
+    background: linear-gradient(90deg, #3268af, #1e2a38);
     border-radius: 5px;
   }
 
