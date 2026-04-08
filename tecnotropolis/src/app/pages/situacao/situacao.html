@@ -2,15 +2,13 @@
 
   <!-- Destaque principal -->
   <section class="hero">
-    <div class="hero-content">
-      <h1>Ataque Cibernético Afeta Infraestrutura Nacional</h1>
-      <p>
-        Serviços bancários, transporte e comunicações enfrentam instabilidade em todo o país.
-      </p>
-    </div>
+    <h1>Ataque Cibernético Afeta Infraestrutura Nacional</h1>
+    <p class="subtitle">
+      Serviços bancários, transporte e comunicações enfrentam instabilidade em todo o país.
+    </p>
   </section>
 
-  <!-- Conteúdo -->
+  <!-- Conteúdo principal -->
   <section class="content">
     <article class="main-news">
       <h2>Resumo do Caso</h2>
@@ -21,38 +19,64 @@
         A instabilidade gerou dificuldades em transações financeiras, interrupções em deslocamentos urbanos e falhas na troca de informações, impactando milhões de pessoas.
       </p>
       <p>
-        Autoridades e especialistas em segurança digital atuam para conter a ameaça e restabelecer os sistemas afetados.
+        Autoridades e especialistas em segurança digital atuam para conter a ameaça, identificar a origem do ataque e restabelecer os sistemas afetados.
       </p>
       <p>
-        O incidente reforça a necessidade de investimentos em cibersegurança.
+        O incidente levanta preocupações sobre a vulnerabilidade das infraestruturas digitais e reforça a necessidade de investimentos em cibersegurança.
       </p>
+
+      <!-- GRÁFICO -->
+      <div class="chart">
+        <h3>Impacto do Ataque por Setor</h3>
+
+        <div class="bar">
+          <span>Bancos</span>
+          <div class="progress" style="width: 90%"></div>
+        </div>
+
+        <div class="bar">
+          <span>Transporte</span>
+          <div class="progress" style="width: 75%"></div>
+        </div>
+
+        <div class="bar">
+          <span>Comunicações</span>
+          <div class="progress" style="width: 80%"></div>
+        </div>
+
+        <div class="bar">
+          <span>Serviços Públicos</span>
+          <div class="progress" style="width: 65%"></div>
+        </div>
+      </div>
+
     </article>
 
-    <!-- Sidebar -->
+    <!-- Barra lateral de notícias -->
     <aside class="sidebar">
       <h2>Últimas Notícias</h2>
 
       <div class="news-item">
         <h3>Bancos enfrentam instabilidade</h3>
-        <p>Clientes relatam dificuldades para acessar contas.</p>
+        <p>Clientes relatam dificuldades para acessar contas e realizar pagamentos online.</p>
         <span>Atualizado há 30 minutos</span>
       </div>
 
       <div class="news-item">
         <h3>Transporte público afetado</h3>
-        <p>Falhas em sistemas de bilhetagem eletrônica.</p>
+        <p>Sistemas de bilhetagem eletrônica apresentam falhas em diversas cidades.</p>
         <span>Atualizado há 1 hora</span>
       </div>
 
       <div class="news-item">
-        <h3>Governo investiga ataque</h3>
-        <p>Equipes buscam identificar os responsáveis.</p>
+        <h3>Governo investiga origem do ataque</h3>
+        <p>Equipes de segurança trabalham para identificar responsáveis pelo incidente.</p>
         <span>Atualizado há 2 horas</span>
       </div>
 
       <div class="news-item">
-        <h3>Especialistas fazem alerta</h3>
-        <p>Infraestrutura digital mostra vulnerabilidades.</p>
+        <h3>Especialistas alertam sobre riscos</h3>
+        <p>Falhas expostas indicam necessidade urgente de reforço em cibersegurança.</p>
         <span>Atualizado hoje</span>
       </div>
     </aside>
@@ -61,132 +85,89 @@
 </main>
 
 <style>
-  /* Reset básico */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   body {
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-    background: #eef2f7;
-    color: #1a1a1a;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
   }
 
   .container {
     max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
+    margin: auto;
+    padding: 20px;
   }
 
-  /* HERO */
   .hero {
-    background: linear-gradient(135deg, #3268af, #2b5876);
+    background: #3268af;
     color: white;
-    border-radius: 12px;
-    padding: 50px;
-    margin-bottom: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
   }
 
-  .hero h1 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-  }
-
-  .hero p {
-    font-size: 1.1rem;
+  .subtitle {
+    margin-top: 10px;
     opacity: 0.9;
   }
 
-  /* LAYOUT */
   .content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 25px;
+    display: flex;
+    gap: 20px;
   }
 
-  /* MAIN NEWS */
   .main-news {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
   }
 
-  .main-news h2 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-    border-left: 4px solid #2b5876;
-    padding-left: 10px;
-  }
-
-  .main-news p {
-    margin-bottom: 15px;
-    color: #333;
-  }
-
-  /* SIDEBAR */
   .sidebar {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  }
-
-  .sidebar h2 {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
   }
 
   .news-item {
-    padding: 15px 0;
-    border-bottom: 1px solid #eee;
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
-
-  .news-item:last-child {
-    border-bottom: none;
-  }
-
-  .news-item:hover {
-    transform: translateX(5px);
-  }
-
-  .news-item h3 {
-    font-size: 1rem;
-    margin-bottom: 5px;
-    color: #1e3a5f;
-  }
-
-  .news-item p {
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
   }
 
   .news-item span {
-    font-size: 0.75rem;
-    color: #999;
+    font-size: 12px;
+    color: gray;
   }
 
-  /* RESPONSIVO */
-  @media (max-width: 900px) {
+  /* GRÁFICO */
+  .chart {
+    margin-top: 25px;
+  }
+
+  .chart h3 {
+    margin-bottom: 15px;
+  }
+
+  .bar {
+    margin-bottom: 12px;
+  }
+
+  .bar span {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .progress {
+    height: 10px;
+    background: #1e2a38;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 768px) {
     .content {
-      grid-template-columns: 1fr;
-    }
-
-    .hero {
-      padding: 30px;
-    }
-
-    .hero h1 {
-      font-size: 1.6rem;
+      flex-direction: column;
     }
   }
 </style>
